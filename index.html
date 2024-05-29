@@ -14,7 +14,7 @@
 			if(i<100){index='0'+i;}
 			if(i<10){index='00'+i;}
             		var li=document.createElement('li');
-            		li.innerHTML='<li><a target="_blank" href="'+index+'/index.html" class="image"><img src="images/'+index+'.jpg" alt="" onerror="this.src=\'images/'+index+'.png\'"></a><h2>编号:'+index+'</h2></li>';
+            		li.innerHTML='<a target="_blank" href="'+index+'/index.html" class="image"><img src="images/'+index+'.jpg" alt="" onerror="this.src=\'images/'+index+'.png\'"></a><h2>编号:'+index+'</h2>';
 			ul.append(li);
 		}
 	</script>
