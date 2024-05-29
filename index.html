@@ -18,7 +18,7 @@
 			var index=i;
 			if(i<10){index='00'+i;}
 			if(i<100){index='0'+i;}
-			ul.appendElement('<li><a target="_blank" href="'+index+'/index.html" class="image"><img src="images/'+index+'.jpg" alt=""></a><h2>编号:'+index+'</h2></li>');
+			ul.appendElement('<li><a target="_blank" href="'+index+'/index.html" class="image"><img src="images/'+index+'.jpg" alt="" onerror="this.src=\'images/'+index+'.png\'"></a><h2>编号:'+index+'</h2></li>');
 		}
 	</script>
 </body>
