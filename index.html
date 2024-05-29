@@ -3,9 +3,7 @@
   <title>120套HTML5后台登陆模板</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <script type="text/javascript" src="../js/jquery.js"></script>
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="../css/iconfont.css" type="text/css">
 </head>
 <body>
   <div id="wrapper">
@@ -130,26 +128,8 @@
 	<li><a target="_blank" href="118/index.html" class="image"><img src="images/118.jpg" alt=""></a><h2>编号:L118</h2></li>
 	<li><a target="_blank" href="119/index.html" class="image"><img src="images/119.jpg" alt=""></a><h2>编号:L119</h2></li>
 	<li><a target="_blank" href="120/index.html" class="image"><img src="images/120.jpg" alt=""></a><h2>编号:L120</h2></li>
+	<li><a target="_blank" href="121/index.html" class="image"><img src="images/121.jpg" alt=""></a><h2>编号:L121</h2></li>
     </ul>
   </div>
-
- <script>
-    $(document).ready(function(e) {
-        $("#main li").each(function(index, element) {
-        	var txt=$(this).index()+1;
-		if(txt<10){
-			txt="00"+txt
-		}else{
-			txt="0"+txt	
-		}
-		if(txt>=100){
-			txt=$(this).index()+1
-		}
-		$(this).children("h2").text("编号:L"+txt)
-		$(this).children("a").attr("href","login/"+txt+"/index.html")
-		$(this).children("a").children("img").attr("src","images/"+txt+".jpg")
-        });
-    });
-    </script>
 </body>
 </html>
