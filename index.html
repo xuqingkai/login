@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 <head>
   <title>120套HTML5后台登陆模板</title>
   <meta charset="utf-8">
@@ -6,19 +6,16 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div id="wrapper">
-    <ul>
-	<li><a target="_blank" href="001/index.html" class="image"><img src="images/001.jpg" alt=""></a><h2>编号:L001</h2></li>
-	
-    </ul>
-  </div>
+    <div id="wrapper"><ul></ul></div>
 	<script>
 		var ul = document.getElementsByTagName('ul')[0];
 		for(var i=1;i<=128;i++){
 			var index=i;
-			if(i<10){index='00'+i;}
 			if(i<100){index='0'+i;}
-			ul.appendElement('<li><a target="_blank" href="'+index+'/index.html" class="image"><img src="images/'+index+'.jpg" alt="" onerror="this.src=\'images/'+index+'.png\'"></a><h2>编号:'+index+'</h2></li>');
+			if(i<10){index='00'+i;}
+            		var li=document.createElement('li');
+            		li.innerHTML='<li><a target="_blank" href="'+index+'/index.html" class="image"><img src="images/'+index+'.jpg" alt="" onerror="this.src=\'images/'+index+'.png\'"></a><h2>编号:'+index+'</h2></li>';
+			ul.append(li);
 		}
 	</script>
 </body>
